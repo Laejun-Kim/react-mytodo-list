@@ -5,6 +5,15 @@
   border-radius: 15px;
   padding: 5px;
 }
+
+.notfinished > .complete {
+  /* display: none; */
+  opacity: 0.3;
+}
+.finished > .not-complete {
+  opacity: 0.3;
+}
+
 .list-wrapper {
   display: flex;
   gap: 5px;
