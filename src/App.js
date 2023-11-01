@@ -33,7 +33,6 @@ function App() {
         return item;
       });
     });
-    console.log(this);
   };
   const registerBtnHndlr = function () {
     const newTodo = { id: toDos.length + 1, title, content, isDone: false };
