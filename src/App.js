@@ -1,6 +1,11 @@
 import "./App.css";
 import { useState } from "react";
 
+let idCounter = 4;
+function idMaker() {
+  return idCounter++;
+}
+
 function App() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
@@ -35,7 +40,7 @@ function App() {
     });
   };
   const registerBtnHndlr = function () {
-    const newTodo = { id: toDos.length + 1, title, content, isDone: false };
+    const newTodo = { id: idMaker(), title, content, isDone: false };
     setToDos([...toDos, newTodo]);
     console.log(toDos);
   };
@@ -48,13 +53,19 @@ function App() {
   return (
     <div className="App">
       <div className="input-field">
-        제목 :&nbsp;
-        <input value={title} onChange={titleChangeHandler} />
+        <label htmlFor="title-input">여기에 제목을 입력 : </label>
+        <input value={title} onChange={titleChangeHandler} id="title-input" />
         <br />
-        내용 :&nbsp;
-        <input value={content} onChange={contentChangeHandler} />
+        <label htmlFor="content-input">여기에 제목을 입력 : </label>
+
+        <input
+          value={content}
+          onChange={contentChangeHandler}
+          id="content-input"
+        />
         <br />
         <button onClick={registerBtnHndlr}>등록하기</button>
+        <button onClick={() => console.log(toDos)}>현재 어레이 확인</button>
       </div>
       <div className="list-wrapper notfinished">
         <h3>진행중!</h3>
