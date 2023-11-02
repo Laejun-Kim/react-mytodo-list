@@ -1,7 +1,8 @@
 import "./App.css";
 import { useState } from "react";
 
-let idCounter = 4;
+//고유 id를 생성하는 함수
+let idCounter = 4; //초기 toDos가 3개라서 4부터 시작.
 function idMaker() {
   return idCounter++;
 }
@@ -108,3 +109,9 @@ function App() {
 }
 
 export default App;
+
+// const Todo = () => {
+//   return (
+
+//   )
+// };
