@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
-import Todo from "./Todo";
-import Input from "./Input";
+import Todo from "./components/Todo";
+import Input from "./components/Input";
 
 function App() {
   const [title, setTitle] = useState("");

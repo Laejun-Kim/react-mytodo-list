@@ -9,7 +9,8 @@
   height: 200px;
   border: solid 2px blue;
   border-radius: 15px;
-  padding: 5px;
+  padding: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
 
 .notfinished > .complete {
