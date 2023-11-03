@@ -10,7 +10,12 @@ function App() {
   // const [isDone, setIsDone] = useState(false); //이게 여기 선언된게 만악의 근원인것 같다
 
   const [toDos, setToDos] = useState([
-    { id: 1, title: "장보기", content: "고기100g, 우유1팩", isDone: true },
+    {
+      id: 1,
+      title: "장보기",
+      content: "고기100g, 우유1팩, 당근 2개",
+      isDone: true,
+    },
     {
       id: 2,
       title: "고양이",
@@ -33,13 +38,13 @@ function App() {
       />
 
       <div className="list-wrapper notfinished">
-        <h2>진행중!🤔</h2>
+        <h2>진행중인 TODO!🤔</h2>
         {toDos.map((item) => {
           return <Todo item={item} toDos={toDos} setToDos={setToDos} />;
         })}
       </div>
       <div className="list-wrapper finished">
-        <h2>완료!🥳</h2>
+        <h2>완료된 TODO!🥳</h2>
         {toDos.map((item) => {
           return <Todo item={item} toDos={toDos} setToDos={setToDos} />;
         })}
