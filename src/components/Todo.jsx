@@ -15,10 +15,21 @@ const Todo = ({ item, toDos, setToDos }) => {
       });
     });
   };
-  const deleteBtnHndlr = (id) => {
-    const newTodo = toDos.filter((item) => item.id !== id);
-    setToDos(newTodo);
+  const deleteBtnHndlr = (id, done) => {
+    if (
+      window.confirm(
+        done
+          ? "삭제할까요?"
+          : "정말 삭제할까요? 해야할 일로부터 도망치는건 아니죠?"
+      )
+    ) {
+      const newTodo = toDos.filter((item) => item.id !== id);
+      setToDos(newTodo);
+    } else {
+      return;
+    }
   };
+
   return (
     <div className={combinedClassName}>
       <h4>{item.title}</h4>
@@ -29,7 +40,9 @@ const Todo = ({ item, toDos, setToDos }) => {
       </div>
       <div className="toDo__btn-box">
         {" "}
-        <button onClick={() => deleteBtnHndlr(item.id)}>삭제하기</button>
+        <button onClick={() => deleteBtnHndlr(item.id, item.isDone)}>
+          삭제하기
+        </button>
         <button onClick={() => doneCancelBtnHndlr(item.id)}>
           {item.isDone ? "취소" : "완료"}
         </button>

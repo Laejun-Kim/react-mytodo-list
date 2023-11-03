@@ -41,6 +41,7 @@ const Input = ({ setToDos, toDos }) => {
         onKeyDown={enterHndlr}
         id="title-input"
         maxLength="26"
+        placeholder="제목을 입력하세요(최대26글자)"
       />
 
       <label htmlFor="content-input"> 내용 입력</label>
@@ -50,6 +51,7 @@ const Input = ({ setToDos, toDos }) => {
         onChange={contentChangeHndlr}
         onKeyDown={enterHndlr}
         id="content-input"
+        placeholder="내용을 입력하세요(길이제한 없음)"
       />
 
       <button onClick={registerBtnHndlr}>등록하기</button>
