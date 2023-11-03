@@ -35,7 +35,7 @@ const Input = ({ title, setTitle, content, setContent, setToDos, toDos }) => {
       <input value={content} onChange={contentChangeHndlr} id="content-input" />
 
       <button onClick={registerBtnHndlr}>등록하기</button>
-      {/* <button onClick={() => console.log(toDos)}>현재 어레이 확인</button> */}
+      <button onClick={() => console.log(toDos)}>현재 어레이 확인</button>
     </div>
   );
 };

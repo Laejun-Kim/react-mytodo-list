@@ -1,0 +1,18 @@
+.notfinished .complete {
+  display: none;
+  /* opacity: 0.3; */
+}
+.finished .not-complete {
+  display: none;
+  /* opacity: 0.3; */
+}
+
+.list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.list-wrapper h2 {
+  flex-basis: 100%;
+}

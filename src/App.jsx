@@ -1,8 +1,8 @@
 import "./App.css";
 import { useState } from "react";
-import Todo from "./components/Todo";
 import Input from "./components/Input";
 import Header from "./components/Header";
+import Main from "./components/Main";
 
 function App() {
   const [title, setTitle] = useState("");
@@ -36,19 +36,7 @@ function App() {
         toDos={toDos}
         setToDos={setToDos}
       />
-
-      <div className="list-wrapper notfinished">
-        <h2>진행중인 TODO!🤔</h2>
-        {toDos.map((item) => {
-          return <Todo item={item} toDos={toDos} setToDos={setToDos} />;
-        })}
-      </div>
-      <div className="list-wrapper finished">
-        <h2>완료된 TODO!🥳</h2>
-        {toDos.map((item) => {
-          return <Todo item={item} toDos={toDos} setToDos={setToDos} />;
-        })}
-      </div>
+      <Main toDos={toDos} setToDos={setToDos} />
     </div>
   );
 }

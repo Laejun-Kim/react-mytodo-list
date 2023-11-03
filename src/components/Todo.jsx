@@ -18,10 +18,9 @@ const Todo = ({ item, toDos, setToDos }) => {
   const deleteBtnHndlr = (id) => {
     const newTodo = toDos.filter((item) => item.id !== id);
     setToDos(newTodo);
-    console.log(toDos);
   };
   return (
-    <div key={item.id} className={combinedClassName}>
+    <div className={combinedClassName}>
       <h4>{item.title}</h4>
       <img src={complete_stamp} className="complete_stamp complete" />
 
