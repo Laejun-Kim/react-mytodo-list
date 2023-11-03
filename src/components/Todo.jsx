@@ -1,4 +1,4 @@
-import complete_stamp from "../kokona_stamp.png";
+import complete_stamp from "../images/kokona_stamp.png";
 
 const Todo = ({ item, toDos, setToDos }) => {
   let divClassName = item.isDone ? "complete" : "not-complete";
