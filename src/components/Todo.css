@@ -38,6 +38,17 @@
   color: white;
   border-radius: 12px;
 }
+.toDo__btn-box button:last-of-type:hover,
+.toDo__btn-box button:last-of-type:active {
+  background-color: #184477;
+  border-color: #184477;
+}
+.toDo__btn-box button:first-of-type:hover,
+.toDo__btn-box button:first-of-type:active {
+  background-color: #a8316a;
+  border-color: #a8316a;
+}
+
 .complete_stamp {
   height: 130px;
   position: absolute;

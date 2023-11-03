@@ -25,6 +25,11 @@
   border-radius: 6px;
   margin-right: 1rem;
 }
+.input-field button:hover,
+.input-field button:active {
+  background-color: #0d60bf;
+  border-color: #0d60bf;
+}
 .input-field label {
   font-size: large;
 }
