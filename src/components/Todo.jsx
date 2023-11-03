@@ -18,17 +18,15 @@ const Todo = ({ item, toDos, setToDos }) => {
   const deleteBtnHndlr = (id) => {
     const newTodo = toDos.filter((item) => item.id !== id);
     setToDos(newTodo);
-    console.log(toDos);
   };
   return (
-    <div key={item.id} className={combinedClassName}>
+    <div className={combinedClassName}>
       <h4>{item.title}</h4>
       <img src={complete_stamp} className="complete_stamp complete" />
 
       <div className="toDo__content-box">
         <p className="toDo__content">{item.content}</p>
       </div>
-      <p>done? {item.isDone.toString()}</p>
       <div className="toDo__btn-box">
         {" "}
         <button onClick={() => deleteBtnHndlr(item.id)}>삭제하기</button>

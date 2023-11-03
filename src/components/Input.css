@@ -1,5 +1,5 @@
 .input-field {
-  background-color: #dbd0ff;
+  background-color: #8db8e4;
   padding: 1rem;
   margin: 2rem auto;
   width: 100%;
@@ -19,11 +19,16 @@
   font: inherit;
   cursor: pointer;
   padding: 1rem 2rem;
-  border: 1px solid #40005d;
-  background-color: #40005d;
+  border: 1px solid #184477;
+  background-color: #184477;
   color: white;
   border-radius: 6px;
   margin-right: 1rem;
+}
+.input-field button:hover,
+.input-field button:active {
+  background-color: #0d60bf;
+  border-color: #0d60bf;
 }
 .input-field label {
   font-size: large;
