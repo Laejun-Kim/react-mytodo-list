@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import Todo from "./components/Todo";
 import Input from "./components/Input";
-import Header from "./components/header";
+import Header from "./components/Header";
 
 function App() {
   const [title, setTitle] = useState("");
@@ -33,13 +33,13 @@ function App() {
       />
 
       <div className="list-wrapper notfinished">
-        <h3>진행중!</h3>
+        <h2>진행중!</h2>
         {toDos.map((item) => {
           return <Todo item={item} toDos={toDos} setToDos={setToDos} />;
         })}
       </div>
       <div className="list-wrapper finished">
-        <h3>완료!</h3>
+        <h2>완료!</h2>
         {toDos.map((item) => {
           return <Todo item={item} toDos={toDos} setToDos={setToDos} />;
         })}
