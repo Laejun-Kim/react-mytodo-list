@@ -20,10 +20,10 @@ const Input = ({ title, setTitle, content, setContent, setToDos, toDos }) => {
 
   return (
     <div className="input-field">
-      <label htmlFor="title-input"> 제목 입력 : </label>
+      <label htmlFor="title-input"> 제목 입력</label>
       <input value={title} onChange={titleChangeHndlr} id="title-input" />
 
-      <label htmlFor="content-input"> 내용 입력 : </label>
+      <label htmlFor="content-input"> 내용 입력</label>
 
       <input value={content} onChange={contentChangeHndlr} id="content-input" />
 
