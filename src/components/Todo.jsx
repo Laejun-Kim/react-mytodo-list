@@ -1,4 +1,8 @@
-const Todo = ({ item, toDos, setToDos, combinedClassName }) => {
+import complete_stamp from "../kokona_stamp.png";
+
+const Todo = ({ item, toDos, setToDos }) => {
+  let divClassName = item.isDone ? "complete" : "not-complete";
+  let combinedClassName = `todo-block ${divClassName}`;
   const doneCancelBtnHndlr = (id) => {
     setToDos((prevToDos) => {
       return prevToDos.map((item) => {
@@ -17,6 +21,7 @@ const Todo = ({ item, toDos, setToDos, combinedClassName }) => {
   return (
     <div key={item.id} className={combinedClassName}>
       <h4>{item.title}</h4>
+      <img src={complete_stamp} className="complete_stamp complete" />
       <p>{item.content}</p>
       <p>done? {item.isDone.toString()}</p>
       <button onClick={() => deleteBtnHndlr(item.id)}>삭제하기</button>

@@ -5,6 +5,7 @@
 }
 
 .todo-block {
+  position: relative;
   width: 300px;
   height: 200px;
   border: solid 2px blue;
@@ -13,16 +14,27 @@
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
 
-.notfinished > .complete {
-  /* display: none; */
-  opacity: 0.3;
+.notfinished .complete {
+  display: none;
+  /* opacity: 0.3; */
 }
-.finished > .not-complete {
-  /* display: none; */
-  opacity: 0.3;
+.finished .not-complete {
+  display: none;
+  /* opacity: 0.3; */
 }
 
 .list-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
+}
+.header-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.complete_stamp {
+  height: 100px;
+  position: absolute;
+  right: 5px;
+  top: 15px;
 }
