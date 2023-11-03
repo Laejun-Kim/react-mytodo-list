@@ -6,7 +6,7 @@ const Main = ({ toDos, setToDos }) => {
     <>
       {" "}
       <div className="list-wrapper notfinished">
-        <h2>진행중인 TODO!🤔</h2>
+        <h2>진행중인 ToDo!🤔</h2>
         {toDos.map((item) => {
           return (
             <Todo key={item.id} item={item} toDos={toDos} setToDos={setToDos} />
@@ -14,7 +14,7 @@ const Main = ({ toDos, setToDos }) => {
         })}
       </div>
       <div className="list-wrapper finished">
-        <h2>완료된 TODO!🥳</h2>
+        <h2>완료된 ToDo!🥳</h2>
         {toDos.map((item) => {
           return (
             <Todo key={item.id} item={item} toDos={toDos} setToDos={setToDos} />
