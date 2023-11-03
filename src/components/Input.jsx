@@ -17,11 +17,19 @@ const Input = ({ setToDos, toDos }) => {
     setContent(event.target.value);
   };
   const registerBtnHndlr = function () {
-    if (title === "") return;
+    if (title === "") {
+      alert("내용은 안써도 제목은 입력해야 등록할수 있어요!");
+      return;
+    }
     const newTodo = { id: idMaker(), title, content, isDone: false };
     setToDos([...toDos, newTodo]);
     setTitle("");
     setContent("");
+  };
+  const enterHndlr = (e) => {
+    if (e.keyCode == 13) {
+      registerBtnHndlr();
+    }
   };
 
   return (
@@ -30,13 +38,19 @@ const Input = ({ setToDos, toDos }) => {
       <input
         value={title}
         onChange={titleChangeHndlr}
+        onKeyDown={enterHndlr}
         id="title-input"
         maxLength="26"
       />
 
       <label htmlFor="content-input"> 내용 입력</label>
 
-      <input value={content} onChange={contentChangeHndlr} id="content-input" />
+      <input
+        value={content}
+        onChange={contentChangeHndlr}
+        onKeyDown={enterHndlr}
+        id="content-input"
+      />
 
       <button onClick={registerBtnHndlr}>등록하기</button>
     </div>

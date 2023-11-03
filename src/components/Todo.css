@@ -1,4 +1,4 @@
-.todo-block {
+.toDo__block {
   position: relative;
   width: 350px;
   height: 300px;
@@ -48,7 +48,7 @@
   border-color: #a8316a;
 }
 
-.complete_stamp {
+.toDo__complete-stamp {
   height: 130px;
   position: absolute;
   right: 5px;

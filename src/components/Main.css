@@ -7,10 +7,10 @@
   /* opacity: 0.3; */
 }
 
-.notfinished .todo-block {
+.notfinished .toDo__block {
   border: solid 2px #c26994;
 }
-.finished .todo-block {
+.finished .toDo__block {
   border: solid 2px #8db8e4;
 }
 

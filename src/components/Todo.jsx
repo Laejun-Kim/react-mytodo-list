@@ -4,7 +4,7 @@ import complete_stamp from "../images/kokona_stamp.png";
 
 const Todo = ({ item, toDos, setToDos }) => {
   let divClassName = item.isDone ? "complete" : "not-complete";
-  let combinedClassName = `todo-block ${divClassName}`;
+  let combinedClassName = `toDo__block ${divClassName}`;
   const doneCancelBtnHndlr = (id) => {
     setToDos((prevToDos) => {
       return prevToDos.map((item) => {
@@ -22,7 +22,7 @@ const Todo = ({ item, toDos, setToDos }) => {
   return (
     <div className={combinedClassName}>
       <h4>{item.title}</h4>
-      <img src={complete_stamp} className="complete_stamp complete" />
+      <img src={complete_stamp} className="toDo__complete-stamp complete" />
 
       <div className="toDo__content-box">
         <p className="toDo__content">{item.content}</p>
