@@ -28,7 +28,6 @@ const Todo = ({ item, toDos, setToDos }) => {
       <div className="toDo__content-box">
         <p className="toDo__content">{item.content}</p>
       </div>
-      <p>done? {item.isDone.toString()}</p>
       <div className="toDo__btn-box">
         {" "}
         <button onClick={() => deleteBtnHndlr(item.id)}>삭제하기</button>

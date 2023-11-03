@@ -33,13 +33,13 @@ function App() {
       />
 
       <div className="list-wrapper notfinished">
-        <h2>진행중!</h2>
+        <h2>진행중!🤔</h2>
         {toDos.map((item) => {
           return <Todo item={item} toDos={toDos} setToDos={setToDos} />;
         })}
       </div>
       <div className="list-wrapper finished">
-        <h2>완료!</h2>
+        <h2>완료!🥳</h2>
         {toDos.map((item) => {
           return <Todo item={item} toDos={toDos} setToDos={setToDos} />;
         })}
