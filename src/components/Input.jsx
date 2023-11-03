@@ -1,11 +1,15 @@
 import "./Input.css";
+import { useState } from "react";
+
 //고유 id를 생성하는 함수
 let idCounter = 4; //초기 toDos가 3개라서 4부터 시작.
 function idMaker() {
   return idCounter++;
 }
 
-const Input = ({ title, setTitle, content, setContent, setToDos, toDos }) => {
+const Input = ({ setToDos, toDos }) => {
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
   const titleChangeHndlr = (event) => {
     setTitle(event.target.value);
   };

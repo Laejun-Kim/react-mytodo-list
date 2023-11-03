@@ -7,6 +7,13 @@
   /* opacity: 0.3; */
 }
 
+.notfinished .todo-block {
+  border: solid 2px #c26994;
+}
+.finished .todo-block {
+  border: solid 2px #8db8e4;
+}
+
 .list-wrapper {
   display: flex;
   flex-wrap: wrap;

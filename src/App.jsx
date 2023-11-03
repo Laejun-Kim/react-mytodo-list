@@ -5,10 +5,6 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 
 function App() {
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
-  // const [isDone, setIsDone] = useState(false); //이게 여기 선언된게 만악의 근원인것 같다
-
   const [toDos, setToDos] = useState([
     {
       id: 1,
@@ -28,14 +24,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Input
-        title={title}
-        setTitle={setTitle}
-        content={content}
-        setContent={setContent}
-        toDos={toDos}
-        setToDos={setToDos}
-      />
+      <Input toDos={toDos} setToDos={setToDos} />
       <Main toDos={toDos} setToDos={setToDos} />
     </div>
   );
