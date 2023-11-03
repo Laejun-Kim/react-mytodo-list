@@ -16,6 +16,8 @@ const Input = ({ title, setTitle, content, setContent, setToDos, toDos }) => {
     if (title === "") return;
     const newTodo = { id: idMaker(), title, content, isDone: false };
     setToDos([...toDos, newTodo]);
+    setTitle("");
+    setContent("");
   };
 
   return (
