@@ -9,7 +9,7 @@ const Todo = ({ item, toDos, setToDos }) => {
     setToDos((prevToDos) => {
       return prevToDos.map((item) => {
         if (item.id === id) {
-          return { ...item, isDone: !item.isDone }; // 해당 아이템의 isDone 값을 토글
+          return { ...item, isDone: !item.isDone };
         }
         return item;
       });
