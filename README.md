@@ -2,7 +2,8 @@
 
 ![logo](https://velog.velcdn.com/images/laejunkim/post/49c85905-07db-4735-8302-8c9a3c398a42/image.png)
 
-프로젝트 확인하기
+## 프로젝트 확인하기
+
 https://react-mytodo-list.vercel.app/
 
 ## 프로젝트 소개
