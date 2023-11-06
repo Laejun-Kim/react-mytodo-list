@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# [내일배움캠프][개인 프로젝트] - ToDo-List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[logo](https://velog.velcdn.com/images/laejunkim/post/49c85905-07db-4735-8302-8c9a3c398a42/image.png)
 
-## Available Scripts
+프로젝트 확인하기
+https://react-mytodo-list.vercel.app/
 
-In the project directory, you can run:
+## 프로젝트 소개
 
-### `yarn start`
+useState 훅과 JSX문법을 활용한 기초적 수준의 React-app 만들기
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 개발 기간
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 23.11.1 - 23.11.6
 
-### `yarn test`
+## 맴버구성
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [김래준](https://github.com/Laejun-Kim)
 
-### `yarn build`
+## 개발 환경
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `JavaScript`
+- `React`
+- `CSS`
+- `HTML`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 주요 기능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- toDo 추가 및 제거
 
-### `yarn eject`
+- 진행중/완료된 toDo 구분
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- toDo 완료시 응원 Stamp 부여
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 진행중인 toDo 삭제 시도시 confirm 창에서 양심의 가책 부여
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 컴포넌트 구성
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[components](https://velog.velcdn.com/images/laejunkim/post/526bff44-57ed-4119-b482-6ab822e17f89/image.png)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- App.jsx
+- Input.jsx - 사용자 입력을 처리하는 컴포넌트
+- Main.jsx - main content를 표시하는 컴포넌트
+- Todo.jsx - 각각의 toDo 항목을 생성하는 컴포넌트
