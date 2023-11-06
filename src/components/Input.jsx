@@ -18,20 +18,12 @@ const Input = ({ setToDos, toDos }) => {
   };
   const registerBtnHndlr = function (e) {
     e.preventDefault();
-    // if (title === "") {
-    //   alert("내용은 안써도 제목은 입력해야 등록할수 있어요!");
-    //   return;
-    // }
+
     const newTodo = { id: idMaker(), title, content, isDone: false };
     setToDos([...toDos, newTodo]);
     setTitle("");
     setContent("");
   };
-  // const enterHndlr = (e) => {
-  //   if (e.keyCode == 13) {
-  //     registerBtnHndlr();
-  //   }
-  // };
 
   return (
     <form className="input-field" onSubmit={registerBtnHndlr}>
@@ -39,7 +31,6 @@ const Input = ({ setToDos, toDos }) => {
       <input
         value={title}
         onChange={titleChangeHndlr}
-        // onKeyDown={enterHndlr}
         id="title-input"
         maxLength="26"
         required
@@ -51,7 +42,6 @@ const Input = ({ setToDos, toDos }) => {
       <input
         value={content}
         onChange={contentChangeHndlr}
-        // onKeyDown={enterHndlr}
         id="content-input"
         placeholder="내용을 입력하세요(길이제한 없음)"
       />

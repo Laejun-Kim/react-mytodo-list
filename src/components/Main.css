@@ -1,10 +1,8 @@
 .notfinished .complete {
   display: none;
-  /* opacity: 0.3; */
 }
 .finished .not-complete {
   display: none;
-  /* opacity: 0.3; */
 }
 
 .notfinished .toDo__block {
