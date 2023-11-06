@@ -13,10 +13,6 @@ useState 훅과 JSX문법을 활용한 기초적 수준의 React-app 만들기
 
 - 23.11.1 - 23.11.6
 
-## 맴버구성
-
-- [김래준](https://github.com/Laejun-Kim)
-
 ## 개발 환경
 
 - `JavaScript`
@@ -41,4 +37,4 @@ useState 훅과 JSX문법을 활용한 기초적 수준의 React-app 만들기
 - App.jsx
 - Input.jsx - 사용자 입력을 처리하는 컴포넌트
 - Main.jsx - main content를 표시하는 컴포넌트
-- Todo.jsx - 각각의 toDo 항목을 생성하는 컴포넌트
+- Todo.jsx - Main 컴포넌트 안에서각각의 toDo 항목을 생성하는 컴포넌트
